@@ -4,7 +4,7 @@ const addEmailBtn = document.getElementById('addEmai');
 const addPhoneBtn = document.getElementById('addPHone');
 const addAddressBtn = document.getElementById('addAddress');
 
-// Seminar listener for adding email fields
+//  for adding email fields
 addEmailBtn.addSeminarListener('click', () => {
     const newEmailDiv = document.createElement('div');
     newEmailDiv.classList.add('form-group');
@@ -21,7 +21,7 @@ removeEmailBtn.type = 'button';
 removeEmailBtn.classList.add('remove-field');
 removeEmailBtn.innerText = 'Remove';
 
-// Seminar listener for adding phone number fields
+//  for adding phone number fields
 addPhoneBtn.addSeminarListener('click', () => {
     const newPhoneDiv = document.createElement('div');
     newPhoneDiv.classList.add('form-group');
@@ -38,7 +38,7 @@ removePhoneBtn.type = 'button';
 removePhoneBtn.classList.add('remove-field');
 removePhoneBtn.innerText = 'Remove';
 
-// Seminar listener for adding address fields
+//  for adding address fields
 addAddressBtn.addSeminarListener('click', () => {
     const newAddressDiv = document.createElement('div');
     newAddressDiv.classList.add('form-group');
@@ -55,7 +55,7 @@ removePhoneBtn.type = 'button';
 removePhoneBtn.classList.add('remove-field');
 removePhoneBtn.innerText = 'Remove';
 
-// Form submission seminar listener
+// Form submission 
 form.addSeminarListener('submit', (seminar) => {
     seminar.preventDefault();
     const formData = new FormData(form);
